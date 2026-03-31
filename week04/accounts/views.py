@@ -25,3 +25,11 @@ def login(request):
             return redirect('main')
         
     return render(request, 'login.html')
+
+def main(request):
+    return render(request, "main.html")
+    
+def logout(request):
+    if request.user.is_authenticated:
+        auth_logout(request)
+        return redirect('login')

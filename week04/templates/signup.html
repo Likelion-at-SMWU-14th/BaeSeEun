@@ -16,7 +16,7 @@
           <h2>회원가입하기</h2>
         </div>
         <a href="{% url 'login' %}" class="out-btn">
-          <img src="./images/out.svg" />
+          <img src="{% static './images/out.svg' %}" />
         </a>
       </header>
       <form name="signup" method="post" onsubmit="return checkPassword();">
