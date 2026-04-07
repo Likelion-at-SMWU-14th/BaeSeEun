@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import SignupForm
-from django.contrib.auth import authenticate, login as auth_login
+from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout
 
 # Create your views here.
 def signup(request):
